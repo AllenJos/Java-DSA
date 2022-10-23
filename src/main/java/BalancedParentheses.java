@@ -8,6 +8,7 @@ public class BalancedParentheses {
         else
             System.out.println("False");
 
+
     }
 
     public static boolean balancedParentheses(String str){
