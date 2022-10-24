@@ -15,7 +15,6 @@ public class StockSpan {
         stack.push(0);
         System.out.print(span+" ");
 
-        //iterating over each element
         for(int i=1; i<list.size(); i++)
         {
             //checking if the stack is empty and if the current element is greater than or
