@@ -1,9 +1,11 @@
 import java.util.ArrayDeque;
 
+//Given an array and a number k
+//code to find the Largest number in all subarrays of length k
 public class MaxInSubArray {
     public static void main(String[] args) {
 //       int[] arr ={5, 6, 4, 8, 3, 7, 10, 12};
-       int[] arr ={20, 10, 2, 3, 2 , 6, 17, 21, 23, 6};
+       int[] arr ={20, 10, 2, 3, 2 , 6, 17, 21, 23, 6}; //expected output: 20 10 6 17 21 23 23
        int k=4;
        maxInSubArray(arr, k);
     }
