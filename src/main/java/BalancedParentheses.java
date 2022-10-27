@@ -1,6 +1,6 @@
 import java.util.ArrayDeque;
 
-//code to check if the Parentheses are balanced in a String
+//code to check if the Parentheses are balanced in a String.
 public class BalancedParentheses {
     public static void main(String[] args) {
         String str = "{}([()])"; //expected Output: True
