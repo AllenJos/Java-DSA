@@ -1,14 +1,17 @@
 import java.util.ArrayDeque;
 
+//code to find the next Greater element of each element in the array (to the right of element in array)
 public class NextGreaterElement {
     public static void main(String[] args) {
-        int[] arr = {5,15,10,8,6,12,7};
+        int[] arr = {5,15,10,8,6,12,7}; //expected output: 15 -1 12 12 12 -1 -1
 //        int[] arr = {8,10,12};
 //        int[] arr = {12,10,8};
 
         nextGreaterElement(arr);
     }
 
+    //the idea is to use the code for Previous Greater element but only traverse the array from the end
+    //refer Previous Greater element code for comments
     public static void nextGreaterElement(int[] arr){
         int next = -1;
         ArrayDeque<Integer> stack = new ArrayDeque<>();
