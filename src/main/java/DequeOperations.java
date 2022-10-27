@@ -1,6 +1,7 @@
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+//simple code showing several Deque operations
 public class DequeOperations {
     public static void main(String[] args) {
         MyDeque dq = new MyDeque();
