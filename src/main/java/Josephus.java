@@ -1,10 +1,13 @@
 import java.util.Iterator;
 import java.util.LinkedList;
 
+//The famous Josephus problem-
+//Explanation: n persons are standing in circle and we are provided with a value k, where
+//we kill kth person in each time till there is only one person remaining
 public class Josephus {
 
     public static void main(String[] args) throws InterruptedException {
-        int lastItem = josephus(8,2);
+        int lastItem = josephus(8,2); //expected output: 0
         System.out.println(lastItem);
     }
 
@@ -18,6 +21,7 @@ public class Josephus {
 
         Iterator it = list.iterator();
 
+        //iterate over the list
         while(list.size()>1)
         {
             int count=0;
@@ -31,19 +35,19 @@ public class Josephus {
                     it.next();
                     count++;
                 }
-                if(count<k) //reached the end
+                if(count<k) //reached the end of the list but count is still lesser than k
                 {
                     it = list.iterator(); //resetting the iterator to the front of the linked list when it
-                    //reaches the end
+                                          //reaches the end
                     it.next();
                     count++;
                 }
             }
-            //remove
+            //kill the kth person
             it.remove();
         }
 
-
+        //return the last element remaining
         return (list.getFirst());
     }
 
