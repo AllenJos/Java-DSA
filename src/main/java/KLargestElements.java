@@ -3,14 +3,14 @@ import java.util.Collections;
 import java.util.List;
 import java.util.PriorityQueue;
 
+//Code to find k largest elements in the array using Min-Heap data structure
 public class KLargestElements {
     public static void main(String[] args) {
-        List<Integer> list = Arrays.asList(5,15,10,20,8);
+        List<Integer> list = Arrays.asList(5,15,10,20,8);//expected output: [15, 20]
         int k=2;
         kLargestElements(list, k);
     }
 
-    //Method to find k largest elements in the array using Min-Heap data structure
     //The idea is to implement a min heap which holds the first k elements
     //Then traversing from (k+1)th element and compare with the smallest element in the min heap
     //if smaller, then ignore. Else add it to the Min Heap. Doing this gives us a Heap which holds

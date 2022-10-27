@@ -6,7 +6,7 @@ import java.util.*;
 public class KTopFrequencyWithHashMap {
     public static void main(String[] args) {
 //        int[] arr = {10, 5, 20, 5, 10, 19, 30};
-        int[] arr = {20, 40, 30, 20, 30, 40, 60, 60};
+        int[] arr = {20, 40, 30, 20, 30, 40, 60, 60}; //expected output: 20 30 40
         int k = 3;
         kTopFreq(arr, k);
     }
