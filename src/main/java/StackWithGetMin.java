@@ -2,6 +2,7 @@ import java.util.ArrayDeque;
 import java.util.Objects;
 import java.util.Scanner;
 
+//a simple code where we Design a stack with custom GetMin() method
 class StackWithGetMin{
     public static void main(String[] args) {
 //        if(-1024==-1024)
