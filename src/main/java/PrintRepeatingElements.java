@@ -4,7 +4,7 @@ import java.util.HashSet;
 public class PrintRepeatingElements {
 
     public static void main(String[] args) {
-        int[] arr = {10, 8, 7, 7, 10}; //expected outcome: 7 10
+        int[] arr = {10, 8, 7, 7, 10, 10}; //expected outcome: 7 10 10
         printRepeating(arr);
     }
 
