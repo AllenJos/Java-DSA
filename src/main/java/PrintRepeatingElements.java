@@ -12,10 +12,10 @@ public class PrintRepeatingElements {
         HashSet<Integer> repeating = new HashSet<>();
 
         for(int i=0; i<arr.length; i++){
-            if(repeating.contains(arr[i])){
+            if(repeating.contains(arr[i]))
                 System.out.print(arr[i]+" ");
-            }
-            repeating.add(arr[i]);
+            else
+                repeating.add(arr[i]);
         }
     }
 }
