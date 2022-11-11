@@ -1,5 +1,5 @@
 
-//Important Coding Logic:
+//Important Coding Logic: using Kadane's Algorithm
 //Code to find the Max Sum of a Sub-array.
 public class MaxSubArrSum {
     public static void main(String[] args) {
