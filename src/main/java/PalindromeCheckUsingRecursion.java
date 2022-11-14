@@ -1,7 +1,7 @@
 public class PalindromeCheckUsingRecursion {
 
     public static void main(String args[]){
-//        String str = "abbcbba"; //expected outcome: True
+//        String str = "abbcbba";  //expected outcome: True
 //        String str = "geeks";  //expected outcome: False
         String str = "malayalam";  //expected outcome: True
         System.out.println(isPalindrome(str, 0, str.length()-1));
