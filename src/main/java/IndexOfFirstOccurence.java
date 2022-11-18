@@ -3,6 +3,7 @@
 public class IndexOfFirstOccurence {
     public static void main(String[] args) {
         int[] arr = {5, 10, 10, 15, 17, 20, 20, 20, 20};
+        System.out.println(firstIndex(arr, 2)); //expected outcome: -1
         System.out.println(firstIndex(arr, 20)); //expected outcome: 5
         System.out.println(firstIndex(arr, 10)); //expected outcome: 1
     }
@@ -13,19 +14,19 @@ public class IndexOfFirstOccurence {
 
         while(low<=high){
             mid=(low+high)/2;
-            if(arr[mid]==element){
+            if(arr[mid]>element)
+                high=mid-1;
+            else if(arr[mid]<element)
+                low=mid+1;
+            else{
                 //this whole code is same as Binary Search with just one change:
                 //if we encounter the element we just check the element on it's left,
                 //that whether that element is also the element we are looking for.
-                if(arr[mid-1]==element)
-                    high=mid-1;
-                else
+                if(mid==0 || arr[mid-1]!=element)
                     return mid;
+                else
+                    high=mid-1;
             }
-            else if(arr[mid]>element)
-                high=mid-1;
-            else
-                low=mid+1;
         }
 
         return -1;
