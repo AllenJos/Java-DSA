@@ -11,6 +11,10 @@ import java.util.Arrays;
  *       The window of smaller elements will always be 0 to i and larger elements will be
  *       from i+1 to j-1(j is the current index point).
  *       And in the end just swap i+1'th element with the pivot element.
+ *
+ * Note: we can handle the case where pivot element is not the last element,
+ *       simply by swapping the given pivot element with the last element in the array, before
+ *       calling the lPartition method
  */
 public class LomutoPartition {
     public static void main(String[] args) {
