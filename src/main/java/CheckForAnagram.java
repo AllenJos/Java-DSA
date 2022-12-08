@@ -12,25 +12,22 @@ public class CheckForAnagram {
     }
 
     private static boolean checkForAnagram(String s1, String s2) {
+        if(s1.length()!=s2.length())
+            return false;
+
         s1 = s1.toLowerCase();
         s2 = s2.toLowerCase();
         char[] count = new char[26];
         for(int i=0; i<s1.length(); i++){
             count[s1.charAt(i)-'a']++;
-        }
-
-        for(int i=0; i<s2.length(); i++){
             count[s2.charAt(i)-'a']--;
         }
 
-        boolean res=true;
         for(int i=0; i<count.length; i++){
-            if(count[i]!=0){
-                res=false;
-                break;
-            }
+            if(count[i]!=0)
+                return false;
         }
 
-        return res;
+        return true;
     }
 }
